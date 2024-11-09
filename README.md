@@ -40,5 +40,5 @@ Syntax: Button(parent, options)
 *wraplength: If this value is set to a positive number, the text lines will be wrapped to fit within this length.  
 
 **Methods**
-flash(): Causes the button to flash several times between active and normal colors. Leaves the button in the state it was in originally. Ignored if the button is disabled.
-invoke(): Calls the button’s command callback, and returns what that function returns. Has no effect if the button is disabled or there is no callback.
+1. flash(): Causes the button to flash several times between active and normal colors. Leaves the button in the state it was in originally. Ignored if the button is disabled.  
+2. invoke(): Calls the button’s command callback, and returns what that function returns. Has no effect if the button is disabled or there is no callback.  
