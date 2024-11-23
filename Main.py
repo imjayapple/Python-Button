@@ -2,36 +2,26 @@
 import tkinter as tk
 
 # Basic function
-def button_clicked():
-    print("Button Clicked")
+def button1_clicked():
+    print("Yes")
 
+def button2_clicke():
+    print("No")
 # Create the main application window
 root = tk.Tk()
 
 # Creating a button with specified options
-button = tk.Button(root, 
-                   text="Click Me", 
-                   command=button_clicked,
-                   activebackground="blue", 
-                   activeforeground="white",
-                   anchor="center",
-                   bd=3,
-                   bg="lightgray",
-                   cursor="hand2",
-                   disabledforeground="gray",
-                   fg="black",
-                   font=("Arial", 12),
-                   height=2,
-                   highlightbackground="black",
-                   highlightcolor="green",
-                   highlightthickness=2,
-                   justify="center",
-                   overrelief="raised",
-                   padx=10,
-                   pady=5,
-                   width=15,
-                   wraplength=100)
+button1 = tk.Button(root, 
+                   text="Yes", 
+                   command=button1_clicked)
 
-button.pack(padx=20, pady=20)
+
+button2 = tk.Button(root,
+                     text = "No",
+                     command=button2_clicke)
+
+
+button1.pack(padx=20, pady=20)
+button2.pack(padx=20, pady=20)
 
 root.mainloop()
